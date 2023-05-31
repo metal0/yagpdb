@@ -14,7 +14,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -v -ldflags "-X github.com/botlabs-gg/yagp
 FROM alpine:latest
 
 WORKDIR /app
-VOLUME ["/app/soundboard", "/app/cert"]
+#VOLUME ["/app/soundboard", "/app/cert"]
 EXPOSE 80 443
 
 # Dependencies: ca-certificates for client TLS, tzdata for timezone and ffmpeg for soundboard support
